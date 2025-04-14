@@ -13,7 +13,7 @@ describe("Automation Exercise", () => {
 
   it.only("Verify that home page is visible successfully", () => {
     login.launchBrowser();
-    login.loginFunctionality("admin@gmail.com", "admin");
+    login.loginFunctionality("users43@gmail.com", "12RTY@");
     cy.get(".login-form > form > p")
       .should("be.visible")
       .and("have.text", "Your email or password is incorrect!");
